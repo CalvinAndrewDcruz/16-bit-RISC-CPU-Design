@@ -31,7 +31,8 @@ Each module was designed and tested individually before integration.
 3. Observe instruction execution in waveform
 
 ## Results
-(Add waveform showing instruction execution)
+
+![Waveform](sim/waveform.png)
 
 ## Folder Structure
 rtl/ - CPU modules  
