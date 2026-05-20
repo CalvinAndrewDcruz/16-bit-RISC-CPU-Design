@@ -1,43 +1,73 @@
-# 16-bit RISC CPU in Verilog
+# 16-bit RISC CPU using Verilog HDL
 
-## Overview
-This project implements a 16-bit RISC CPU using Verilog HDL with a modular architecture.  
-The processor follows the instruction cycle: fetch, decode, and execute.
+A custom-designed 16-bit RISC processor developed using Verilog HDL and implemented on FPGA using Xilinx Vivado. This project was created to understand the complete digital design flow from RTL design to FPGA implementation.
 
 ## Features
-- Modular design (ALU, Control Unit, Register File)
-- Instruction execution cycle implementation
-- Functional simulation using testbench
-- Scalable architecture
 
-## Design
-The CPU consists of:
-- Program Counter (PC)
-- Instruction Memory
-- Register File
-- Arithmetic Logic Unit (ALU)
-- Control Unit
-- Data Memory
-
-Each module was designed and tested individually before integration.
+* 16-bit RISC Architecture
+* Modular RTL Design
+* Arithmetic Logic Unit (ALU)
+* Register File
+* Control Unit
+* Program Counter
+* Instruction Memory
+* Data Memory
+* Instruction Fetch, Decode, Execute Flow
+* FPGA Synthesis & Implementation
 
 ## Tools Used
-- Verilog HDL
-- ModelSim
 
-## How to Run
-1. Compile all RTL modules
-2. Run testbench
-3. Observe instruction execution in waveform
+* Verilog HDL
+* Xilinx Vivado
+* FPGA Design Flow
+* RTL Simulation & Verification
 
-## Results
+## Design Flow
 
-![Waveform](sim/waveform.png)
+1. RTL Design in Verilog
+2. Functional Simulation
+3. Synthesis
+4. Implementation
+5. Floorplanning & Package Analysis
+6. Resource Utilization Analysis
+7. Bitstream Generation (Upcoming)
 
-## Folder Structure
-rtl/ - CPU modules  
-tb/ - testbench  
-sim/ - waveform outputs  
+## Project Outputs
+
+* RTL Schematic
+* Simulation Waveforms
+* FPGA Device View
+* Package View
+* Resource Utilization Report
+* Timing Analysis
+
+## FPGA Resource Utilization
+
+* Slice LUTs: 47
+* Slice Registers: 16
+* Bonded IOBs: 50
+* BUFGCTRL: 1
+
+## Learning Outcomes
+
+This project helped me gain practical understanding of:
+
+* RTL Design Methodology
+* FPGA Synthesis Flow
+* Digital System Design
+* FPGA Resource Mapping
+* Implementation & Placement
+* Hardware Verification Basics
+
+## Future Improvements
+
+* Add pipelining
+* Extend instruction set
+* Implement hazard handling
+* Improve verification environment
+* Perform advanced timing optimization
 
 ## Author
-Calvin D'Cruz
+
+Calvin Dcruz
+BSc Electronics | FPGA & VLSI Enthusiast
